@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #e9ebf1;
+  background-image: linear-gradient(#360063 0%, #660030 100%);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#playerOneContainer {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.playerOne-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  width: 400px;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #6600305d;
+  color: rgba(255, 255, 255, 0.514);
+}
+
+.playerTwo-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  width: 400px;
+  height: 90vh;
+  background-color: #66003052;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.514);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.playerOne-container-active {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  width: 400px;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6600305d;
+  color: rgb(245, 245, 245);
+}
+
+.playerTwo-container-active {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  width: 400px;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #6600305d;
+  color: rgb(245, 245, 245);
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 30px;
+  width: 200px;
+  height: 100px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px white;
+  justify-content: space-around;
+  width: 177px;
+  height: 90vh;
+}
+
+button {
+  display: inline-block;
+  height: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #92008649;
+  color: #e9ebf1;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px 2px #16001449;
+}
+
+.newGame {
+  height: 100px;
+}
+
+.targetScoreContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  color: white;
+  height: 100px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#targetScoreDisplay {
+  font-size: 40px;
+}
+
+.rollDiceButton {
+  height: 90px;
+}
+
+#diceIcon {
+  height: 50px;
+}
+
+.dice {
+  border: 2px solid;
+  height: 90px;
+  width: 90px;
+  box-shadow: 10px 10px 10px 2px #16001449;
+}
+
+#diceOne {
+  background-image: url("/Dice_Game_Starter-main/question.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#diceTwo {
+  background-image: url("/Dice_Game_Starter-main/question.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.openingWindow {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: purple;
+  background-image: linear-gradient(#360063 0%, #660030 100%);
+  z-index: 999;
+}
+.second-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  height: 100%;
+  align-items: center;
+
+  justify-content: space-around;
+}
+.second-container h1 {
+  font-size: 90px;
+  font-style: unset;
+}
+.second-container p {
+  font-size: 30px;
+}
+
+#openingImage {
+  height: 300px;
+  width: 300px;
+}
+.targetScoreForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+}
+button {
+  cursor: pointer;
+}
+.submitButton {
+  cursor: pointer;
+}

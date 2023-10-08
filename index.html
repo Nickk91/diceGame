@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="playerOne-container-active" id="playerOneContainer">
+        <div class="upper-container" id="player-one-upper-container">
+          <h2 class="player" id="playerOne">PLAYER 1</h2>
+          <p>TOTAL SCORE:</p>
+          <h1 class="totalScore" id="totalScore-player-one"></h1>
+        </div>
+
+        <div class="score-box" id="score-box-one">
+          <div class="current-player" id="currentPlayerOne">CURRENT</div>
+          <div class="current-score" id="current-score-player-one">0</div>
+        </div>
+      </div>
+
+      <div class="buttons-container">
+        <div class="targetScoreContainer">
+          Target Score:
+          <div id="targetScoreDisplay">100</div>
+        </div>
+        <button class="newGame">NEW GAME</button>
+        <div class="dice" id="diceOne"></div>
+        <div class="dice" id="diceTwo"></div>
+        <audio
+          id="audio"
+          src="Dice_Game_Starter-main\sounds\diceRoll.mp3"
+          autostart="false"
+        ></audio>
+        <button class="rollDiceButton">
+          ROLL DICE <br />
+          <img
+            id="diceIcon"
+            src="Dice_Game_Starter-main\sounds\diceRoll.mp3"
+            alt=""
+          />
+        </button>
+        <button class="hold">HOLD</button>
+      </div>
+
+      <div class="playerTwo-container" id="playerTwoContainer">
+        <div class="upper-container" id="player-two-upper-container">
+          <h2 class="playerTwo" id="playerTwo">PLAYER 2</h2>
+          <p>TOTAL SCORE:</p>
+          <div></div>
+          <h1 class="totalScore" id="totalScore-player-two"></h1>
+        </div>
+
+        <div class="score-box" id="score-box-two">
+          <div class="current-player" id="currentPlayerOne">CURRENT</div>
+          <div class="current-score" id="current-score-player-two">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="openingWindow">
+      <div class="second-container">
+        <h1>DICE GAME</h1>
+        <br />
+        <p>Instructions</p>
+        <br />
+        <ul>
+          <li>The game has 2 players, playing in rounds.</li>
+          <li>
+            In each turn, a player rolls 2 dice as many times as he wishes.
+          </li>
+          <li>Each result will get added to his round’s score.</li>
+          <li>
+            But if the player rolls a double six all his round’s score gets
+            lost.
+          </li>
+          <li>After that, it's the next player’s turn.</li>
+          <li>
+            A player can choose to ‘Hold’, which means that his round’s score
+            gets added to his global score.
+          </li>
+
+          After that, it's the next player's turn.
+
+          <li>The first player to reach 100 points wins.</li>
+          <li>
+            Add an input field where players can set the winning score to change
+            the predefined score of 100.
+          </li>
+        </ul>
+        <br /><br /><br />
+
+        <form class="targetScoreForm">
+          <label
+            >Select a Target Score <br />
+            Between 12-500</label
+          ><br />
+          <input
+            class="targetScoreInput"
+            type="number"
+            id="targetscoreId"
+          /><br />
+          <input class="submitButton" type="submit" value="Submit" />
+        </form>
+        <img id="openingImage" src="Dice_Game_Starter-main\pngegg.png" alt="" />
+      </div>
+    </div>
+    <script src="diceGame.js"></script>
+  </body>
+</html>
